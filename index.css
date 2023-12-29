@@ -1,0 +1,224 @@
+ * {
+            padding: 0;
+            margin: 0;
+        }
+
+        /* .body{
+             background-color: black;
+             color: white;
+        } */
+
+        h1 {
+            text-shadow: 2px 2px 10px white;
+            color: black;
+            animation-name: changingpos;
+            animation-duration: 4s;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            animation-fill-mode: forwards;
+            font-family: Arial, sans-serif;
+        }
+
+        @keyframes changingpos {
+            from {
+                top: 0px;
+                left: 0px;
+            }
+
+            to {
+                top: 5px;
+                left: 650px;
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: flex-end;
+            align-content: center;
+            background-color: #ffafbd;
+            margin: 0;
+        }
+
+        nav a {
+            padding: 10px;
+            text-decoration: none;
+            margin: 5px;
+            color: black;
+            font-size: 18px;
+            padding: 15px;
+            font-family: Arial, sans-serif;
+        }
+
+        nav a:hover,nav a:active{
+            color: blue;
+        }
+
+        .searchcontainer1{
+         background-image: linear-gradient(#ffafbd , #ffc3a0);
+        }
+
+        .searchcontainer {
+            width: 80vw;
+            height: 70vh;
+            background: url('/images/spkk.webp');
+            background-size: cover;
+            margin: auto;
+            margin-top: 10px;
+            animation-name: imagechanger;
+            animation-duration: 18s;
+            animation-iteration-count: infinite;
+            background-color: #f2f2f2;
+        }
+
+        @keyframes imagechanger {
+
+            0% {
+                background: url('/images/spkk.webp');
+                background-size: cover;
+            }
+
+            25% {
+                background: url('/images/tiger.jpg');
+                background-size: cover;
+            }
+
+            50% {
+                background: url('/images/pathhan.jpg');
+                background-size: cover;
+            }
+
+            75% {
+                background: url('/images/spkk.webp');
+                background-size: cover;
+            }
+
+            100% {
+                background: url('/images/tjmm.jpg');
+                background-size: cover;
+            }
+
+        }
+
+
+        .searchcontainer .search {
+            position: absolute;
+            top: 330px;
+            left: 490px;
+            border-radius: 15px;
+        }
+
+        .searchcontainer .search form input[type=text] {
+            padding: 11px;
+            width: 380px;
+            font-size: 16px;
+            border-radius: 10px;
+        }
+
+        .searchcontainer .search form input[type=text]:hover {
+            background-color:#ffafbd;
+        }
+
+        .searchcontainer .search form input[type=submit] {
+            padding: 11px;
+            width: 75px;
+            font-size: 16px;
+            background-color: palevioletred;
+            border-radius: 5px;
+        }
+
+        #movietitle {
+            text-shadow: 2px 2px 15px white;
+            color: black;
+            background-color:#ffafbd;
+            font-size: xx-large;
+            margin-top: 10px;
+            font-family: Arial, sans-serif;
+            height: 40px;
+            padding: 15px;
+        }
+
+        .movies {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            justify-content: center;
+            row-gap: 25px;
+            column-gap: 30px;
+        }
+
+        .movies .movie img {
+            width: 340px;
+            margin-bottom: -5px;
+            border-radius: 9px;
+            cursor: pointer;
+        }
+
+        .movies .movie .moviename {
+            font-size: 25px;
+            font-family: Roboto, sans-serif;
+        }
+
+        .movies .movie #stars{
+            width: 328px;
+            background-color: floralwhite;
+            padding: 6px;
+        }
+
+        .movies .movie #stars #votes{
+            padding-left: 25px;
+            font-family: Arial, sans-serif;
+        }
+
+        .checked {
+            color: orange;
+        }
+
+        .movies .movie #language{
+            font-family: Arial, sans-serif;
+            opacity: .6;
+            font-size: 12px;
+        }
+
+        @media only screen and (max-width: 416px) {
+
+            .title {
+                position: relative;
+                margin-left: -180px;
+            }
+        
+            nav {
+        
+                width: 1200px;
+                display: flex;
+                justify-content: center;
+            }
+        
+            .searchcontainer1 {
+                position: relative;
+                width: 1200px;
+            }
+        
+            .searchcontainer{
+                width: auto;
+            }
+        
+            .searchcontainer .search{
+                top: 310px;
+                left: 360px;
+            }
+        
+            #movietitle{
+                width: 1175px;
+            }
+        
+            .movie{
+                width: 288px;
+            }
+        
+            .movies .movie img{
+                width: 1052px;
+            }
+        
+        }
