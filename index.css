@@ -62,7 +62,7 @@
         .searchcontainer {
             width: 80vw;
             height: 70vh;
-            background: url('/images/spkk.webp');
+            background: url('images/spkk.webp');
             background-size: cover;
             margin: auto;
             margin-top: 10px;
@@ -75,27 +75,27 @@
         @keyframes imagechanger {
 
             0% {
-                background: url('/images/spkk.webp');
+                background: url('images/spkk.webp');
                 background-size: cover;
             }
 
             25% {
-                background: url('/images/tiger.jpg');
+                background: url('images/tiger.jpg');
                 background-size: cover;
             }
 
             50% {
-                background: url('/images/pathhan.jpg');
+                background: url('images/pathhan.jpg');
                 background-size: cover;
             }
 
             75% {
-                background: url('/images/spkk.webp');
+                background: url('images/spkk.webp');
                 background-size: cover;
             }
 
             100% {
-                background: url('/images/tjmm.jpg');
+                background: url('images/tjmm.jpg');
                 background-size: cover;
             }
 
